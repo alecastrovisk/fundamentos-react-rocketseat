@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
-import { Post } from './Post';
+import { Post } from './components/Post';
 
 import styles from './App.module.css';
 
@@ -17,6 +17,10 @@ function App() {
           <Post
             author="Alexandre Castro"
             content="blablabla"
+          />
+          <Post 
+            author="Jalin Habey"
+            content="Enxadrista indiano"
           />
         </main>
       </div>
