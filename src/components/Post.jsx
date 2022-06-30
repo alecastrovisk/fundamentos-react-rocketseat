@@ -1,3 +1,4 @@
+import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
@@ -6,9 +7,11 @@ export function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src='https://github.com/alecastrovisk.png' />
+          <Avatar
+            src='https://github.com/leohas.png'
+          />
           <div className={styles.authorInfo}>
-            <strong>Alexandre Castro</strong>
+            <strong>Leonardo Henrique</strong>
             <span>Web Developer</span>
           </div>
         </div>
@@ -18,12 +21,12 @@ export function Post() {
 
       <div className={styles.content}>
         <p>Fala galeraa 👋</p>
-        <p>Acabei de pegar gold e tô pronto pra jobar o Roberto, Yan e o Potinho 🚀
+        <p>Acabei de desistir da matéria da mônica! 🚀
         </p>
         <p>
           {' '} <a
             href='https://br.op.gg/summoners/br/not%20castr0visk?hl=tr_TR'>
-            👉notCastr0visk/carry
+            👉leohas/dev
           </a>
         </p>
         <p>
