@@ -1,3 +1,4 @@
+import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 export function Post() {
@@ -20,10 +21,10 @@ export function Post() {
         <p>Acabei de pegar gold e tô pronto pra jobar o Roberto, Yan e o Potinho 🚀
         </p>
         <p>
-          {' '} <a 
-                href='https://br.op.gg/summoners/br/not%20castr0visk?hl=tr_TR'>
-                  👉notCastr0visk/carry
-                </a>
+          {' '} <a
+            href='https://br.op.gg/summoners/br/not%20castr0visk?hl=tr_TR'>
+            👉notCastr0visk/carry
+          </a>
         </p>
         <p>
           <a href=''>#novoprojeto</a>{' '}
@@ -35,14 +36,20 @@ export function Post() {
       <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
-        <textarea 
+        <textarea
           placeholder='Deixe um comentário'
         />
-        
+
         <footer>
           <button type='submit'>Publicar</button>
         </footer>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 }
